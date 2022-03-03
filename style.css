@@ -1,3 +1,9 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -18,7 +24,9 @@
   .purple-box {
     grid-column: span 6;
     grid-row: span 1;
-    background-color: #733fc8;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+  
   }
   
   .white-box-1 {
@@ -27,7 +35,7 @@
   }
   
   .black-box {
-    background-color: #19202d;
+    background-color: hsl(219, 29%, 14%);
     grid-column: span 6;
     color: white;
   }
@@ -35,7 +43,8 @@
   .grey-box {
     grid-column: span 3;
     grid-row: span 1;
-    background-color: #48556a;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
   }
   
   .white-box-2 {
@@ -46,10 +55,44 @@
     background-color: hsl(0 0% 81%);
   }
   
-  @media (max-width: 700px) {
+  @media  (max-width: 700px) {
     .container > div {
       min-height: auto;
       grid-column: span 12;
     }
   }
   
+  .intro-black {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: hsla(0,0%,0%,0.5);
+  }
+
+  .intro-white {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: hsla(0,0%,100%,0.5);
+  }
+
+
+  img {
+    width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  
+  }
+
+  p {
+    margin: 4px 0px;
+  }
+
+  .quote-black {
+    color: hsla(0,0%,0%,0.7);
+
+  }
+
+  .quote-white {
+    color: hsla(0,0%,100%,0.7);
+  }
